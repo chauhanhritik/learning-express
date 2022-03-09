@@ -1,6 +1,11 @@
+// npm run devstart --> used to run the server using devstart script
+
+
 import express from "express"
 const app=express()
 import expressLayouts from "express-ejs-layouts"
+
+
 
 // Setting view engines-
 app.set("view engine","ejs") //using ejs as view engine
@@ -13,3 +18,4 @@ app.use(expressLayouts) //telling we want to use expressLayouts
 // telling server where our public files will be i.e our html file and css, js etc
 app.use(express.static('public')) //public folder will be containing thode files
 
+app.listen(process.env.PORT||3000)
