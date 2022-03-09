@@ -2,7 +2,7 @@
 
 
 const express=require("express")
-const app=express()
+const app=express() 
 
 // Routes are integrated with views using layouts
 // we define boiler plate for every page using layouts
